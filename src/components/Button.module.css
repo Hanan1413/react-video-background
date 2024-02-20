@@ -1,0 +1,48 @@
+
+:root{
+    --radius: 0.5rem;
+    --transition: all 0.3s linear;
+    --clr-primary-5: #49a6e9;
+
+
+
+}
+
+/* switch button */
+
+.switchBtn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: var(--radius);
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: var(--transition);
+
+  }
+  .switchBtn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--clr-primary-5);
+  }
+  .switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-5);
+    border-radius: var(--radius);
+    margin: 0;
+    display: block;
+    transition: var(--transition);
+  }
+  .slide .switch {
+    left: 50%;
+  }
